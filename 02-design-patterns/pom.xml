@@ -9,13 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>03-springmvc</artifactId>
-    <packaging>pom</packaging>
-
-    <modules>
-        <module>1-springmvc-base</module>
-        <module>2-ssm-integration</module>
-    </modules>
+    <artifactId>02-design-patterns</artifactId>
 
 
 </project>
