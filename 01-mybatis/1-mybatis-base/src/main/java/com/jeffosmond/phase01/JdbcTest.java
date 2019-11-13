@@ -1,3 +1,5 @@
+package com.jeffosmond.phase01;
+
 import org.junit.Test;
 
 import java.sql.*;
@@ -22,7 +24,7 @@ public class JdbcTest {
                     "jdbc:mysql://47.94.14.166:3306/in_depth_learn_java?characterEncoding=utf-8",
                     "root", "root");
             // 定义sql语句 ?表示占位符
-            String sql = "select * from base_user where user_name = ?";
+            String sql = "select * from user where user_name = ?";
             // 获取预处理 statement
             preparedStatement = connection.prepareStatement(sql);
             // 设置参数，第一个参数为 sql 语句中参数的序号（从 1 开始），第二个参数为设置的

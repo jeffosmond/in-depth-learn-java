@@ -9,12 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>01-mybatis</artifactId>
-    <packaging>pom</packaging>
-    <modules>
-        <module>1-mybatis-base</module>
-        <module>2-mybatis-handwrite</module>
-    </modules>
+    <artifactId>05-kafka</artifactId>
 
 
 </project>

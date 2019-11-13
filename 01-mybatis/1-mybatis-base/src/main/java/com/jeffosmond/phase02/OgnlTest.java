@@ -1,4 +1,6 @@
-import entity.User;
+package com.jeffosmond.phase02;
+
+import lombok.Data;
 import ognl.Ognl;
 import ognl.OgnlContext;
 import ognl.OgnlException;
@@ -32,7 +34,6 @@ public class OgnlTest {
         User user = new User();
         user.setUserId(1L);
         user.setUserName("JeffOsmond");
-        user.setUserSex(1);
         context.put("user",user);
         //  获取数据
         System.out.println(context.get("user"));
@@ -96,4 +97,11 @@ public class OgnlTest {
         Object value = Ognl.getValue(ognl, context, context.getRoot());
         System.out.println(value);
     }
+
+    @Data
+    class User {
+        private Long userId;
+        private String userName;
+    }
 }
+

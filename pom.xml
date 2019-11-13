@@ -13,7 +13,19 @@
         <module>02-design-patterns</module>
         <module>01-mybatis</module>
         <module>03-spring</module>
+        <module>05-kafka</module>
     </modules>
 
+    <properties>
+        <lombok.version>1.18.0</lombok.version>
+    </properties>
 
+    <dependencies>
+        <!--Lombok-->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>${lombok.version}</version>
+        </dependency>
+    </dependencies>
 </project>
