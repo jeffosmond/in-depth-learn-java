@@ -75,7 +75,7 @@
                 <artifactId>mybatis-generator-maven-plugin</artifactId>
                 <configuration>
                     <!--可指定配置文件地址，默认地址resources/generatorConfig.xml -->
-                    <configurationFile>${basedir}/src/main/resources/phase05/generatorConfig.xml</configurationFile>
+                    <configurationFile>${basedir}/src/main/resources/phase04/generatorConfig.xml</configurationFile>
                 </configuration>
                 <!--依赖DB的驱动包 -->
                 <dependencies>
