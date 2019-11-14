@@ -1,8 +1,13 @@
 package com.jeffosmond.phase05;
 
+import com.jeffosmond.config.Configuration;
+import com.jeffosmond.config.parser.ConfigXMLParser;
 import com.jeffosmond.phase05.controller.output.UserOutput;
 import com.jeffosmond.phase05.dao.UserDao;
 import com.jeffosmond.phase05.dao.impl.UserDaoImpl;
+import com.jeffosmond.util.DocumentUtils;
+import com.jeffosmond.util.ResourcesUtils;
+import org.dom4j.Document;
 import org.junit.Test;
 
 import java.io.InputStream;
@@ -19,15 +24,15 @@ public class MybatisHandwriteTest {
      */
     @Test
     public void testInitConfigurarion() {
-//        //定义全局配置文件路径
-//        String resource = "phase05/mybatis-config.xml";
-//        //获取文件数据流
-//        InputStream inputStream = ResourcesUtils.getResourcesAsStream(resource);
-//        //转换Element对象
-//        Document element = DocumentUtils.readDocument(inputStream);
-//        //解析Element对象为Configuration对象
-//        Configuration configuration = new ConfigXMLParser().parseConfiguration(element.getRootElement());
-//        System.out.println(configuration);
+        //定义全局配置文件路径
+        String resource = "phase05/mybatis-config.xml";
+        //获取文件数据流
+        InputStream inputStream = ResourcesUtils.getResourcesAsStream(resource);
+        //转换Element对象
+        Document element = DocumentUtils.readDocument(inputStream);
+        //解析Element对象为Configuration对象
+        Configuration configuration = new ConfigXMLParser().parseConfiguration(element.getRootElement());
+        System.out.println(configuration);
     }
 
     @Test
